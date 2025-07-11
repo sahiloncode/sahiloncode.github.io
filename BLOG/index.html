@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CodewithSahil - Moose Style</title>
+	<script src="https://cdn.tailwindcss.com">
+
+	</script>
+	<script>
+		tailwind.config = { darkMode: 'class' }
+	</script>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+	<!-- Navbar -->
+
+	<!-- Navbar -->
+	<!-- Navbar -->
+	<nav class="sticky top-0 bg-white dark:bg-gray-800 shadow z-10">
+		<div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4">
+
+			<!-- Brand -->
+			<div class="flex-shrink-0 text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+				CodeWithSahil
+			</div>
+
+			<!-- Hamburger for mobile -->
+			<div class="md:hidden">
+				<button id="menuToggle" class="text-gray-800 dark:text-gray-200 text-2xl focus:outline-none">
+        &#9776;
+      </button>
+    </div>
+
+    <!-- Responsive menu -->
+    <div id="menu" class="w-full mt-4 space-y-2 md:space-y-0 md:flex md:items-center md:space-x-6 md:mt-0 md:w-auto hidden">
+
+      <!-- Nav Links -->
+      <a href="#home" class="block hover:text-blue-500">Home</a>
+      <a href="#experience" class="block hover:text-blue-500">Experiences</a>
+      <a href="#notes" class="block hover:text-blue-500">Notes</a>
+      <a href="#projects" class="block hover:text-blue-500">Projects</a>
+      <a href="#vscode" class="block hover:text-blue-500">VS Code Extensions</a>
+
+      <!-- Theme Toggle -->
+    <button id="themeToggle" class="px-4 py-1.5 rounded-full border border-transparent text-sm font-medium text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-800 shadow-sm hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition duration-200">
+  🌓 Toggle Theme
+</button>
+
+
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section id="home"
+  class="min-h-screen bg-cover bg-center"
+  style="background-image: url('https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1600&q=80');">
+  
+  <div class="min-h-screen flex items-center justify-center bg-black bg-opacity-60 text-white text-center px-4">
+    <div class="max-w-2xl">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+        Welcome to My Blog
+      </h1>
+      <p class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl font-light">
+        Journey, Notes, and Dev Tips by Sahil Rajput
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Content Sections -->
+  <main class="max-w-6xl mx-auto p-6 space-y-20">
+
+    <!-- Experiences -->
+ <section id="experience">
+  <h2 class="text-3xl font-semibold border-b pb-2">📖 History & Experiences</h2>
+  <div class="mt-6 space-y-6">
+
+    <!-- Journey Start -->
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-2xl font-medium">🚀 How It All Began</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">
+        My journey into the world of development began with a curiosity for how websites work behind the scenes. What started as simple HTML and CSS experiments soon grew into a strong passion for creating clean, functional, and user-friendly web applications. Over time, I found myself exploring JavaScript, responsive design, and frontend frameworks.
+      </p>
+    </article>
+
+    <!-- Growing With Projects -->
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-2xl font-medium">🧠 Learning Through Projects</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">
+        I firmly believe that real learning comes from building. From my first static site to dynamic JavaScript projects and functional clones of real-world apps like Amazon and Myntra, each project taught me something new — from logic structuring to UI/UX decisions. These hands-on experiences refined my ability to think critically and solve problems efficiently.
+      </p>
+    </article>
+
+    <!-- Overcoming Challenges -->
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-2xl font-medium">🛠️ Challenges Faced</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">
+        Like every developer, I faced countless bugs, design roadblocks, and even burnout. But each obstacle pushed me to dig deeper, improve my problem-solving approach, and stay consistent. Whether it was fixing cross-browser issues or managing responsive layouts, these challenges became milestones in my journey.
+      </p>
+    </article>
+
+    <!-- Current Focus -->
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-2xl font-medium">📌 Present Focus</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">
+        Currently, my focus is on mastering modern frontend technologies like Tailwind CSS, JavaScript, and building polished, scalable UI experiences. I’m also exploring the basics of backend integration and Firebase to become more versatile as a developer. Sharing what I learn has become just as rewarding as building itself.
+      </p>
+    </article>
+
+    <!-- Future Goals -->
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-2xl font-medium">🌟 What’s Next</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">
+        My long-term goal is to contribute to meaningful projects, collaborate with passionate developers, and never stop growing. I'm actively improving my portfolio, writing technical blogs, and staying up-to-date with emerging technologies to stay ahead in this dynamic field.
+      </p>
+    </article>
+
+  </div>
+</section>
+ <!-- Notes -->
+ <section id="notes" class="mt-20">
+  <h2 class="text-3xl font-semibold border-b pb-2">📝 Notes & Resources</h2>
+
+  <!-- Search -->
+  <div class="my-6">
+    <input type="text" id="noteSearch" placeholder="Search notes..."
+      class="w-full md:w-1/2 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-900 dark:text-white">
+  </div>
+
+  <!-- Tabs -->
+<!-- Tabs -->
+<div class="flex flex-wrap space-x-4 border-b mb-6">
+  <button data-tab="all" class="tab-btn font-semibold py-2 border-b-2 border-blue-500 text-blue-500">All Notes</button>
+  <button data-tab="html" class="tab-btn font-semibold py-2 text-gray-600 dark:text-gray-400 hover:text-blue-500">HTML</button>
+  <button data-tab="css" class="tab-btn font-semibold py-2 text-gray-600 dark:text-gray-400 hover:text-blue-500">CSS</button>
+  <button data-tab="js" class="tab-btn font-semibold py-2 text-gray-600 dark:text-gray-400 hover:text-blue-500">JavaScript</button>
+  <button data-tab="tailwind" class="tab-btn font-semibold py-2 text-gray-600 dark:text-gray-400 hover:text-blue-500">Tailwind</button>
+</div>
+
+
+  <!-- Notes Grid -->
+  <div id="notesGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+   <!-- HTML -->
+<article class="note-card html bg-white dark:bg-gray-800 rounded-lg shadow p-4 hover:shadow-xl transition">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Icon" class="w-16 h-16 mx-auto">
+  <h4 class="mt-4 text-lg font-semibold text-center">HTML Basics</h4>
+  <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-1">Learn HTML tags, structure, and semantic elements.</p>
+  <a href="HTML-Notes.pdf" class="block mt-3 text-center text-blue-500 hover:underline">View Notes</a>
+</article>
+
+<!-- CSS -->
+<article class="note-card css bg-white dark:bg-gray-800 rounded-lg shadow p-4 hover:shadow-xl transition">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Icon" class="w-16 h-16 mx-auto">
+  <h4 class="mt-4 text-lg font-semibold text-center">CSS Styling Guide</h4>
+  <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-1">Master layout, colors, positioning, and media queries.</p>
+  <a href="CSS-Notes.pdf" class="block mt-3 text-center text-blue-500 hover:underline">View Notes</a>
+</article>
+
+<!-- JavaScript -->
+<article class="note-card js bg-white dark:bg-gray-800 rounded-lg shadow p-4 hover:shadow-xl transition">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Icon" class="w-16 h-16 mx-auto">
+  <h4 class="mt-4 text-lg font-semibold text-center">JS Fundamentals</h4>
+  <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-1">Explore variables, functions, events, and DOM handling.</p>
+  <a href="JavaScript-Notes.pdf" class="block mt-3 text-center text-blue-500 hover:underline">View Notes</a>
+</article>
+
+<!-- Tailwind -->
+<article class="note-card tailwind bg-white dark:bg-gray-800 rounded-lg shadow p-4 hover:shadow-xl transition">
+  <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind Icon" class="w-16 h-16 mx-auto">
+  <h4 class="mt-4 text-lg font-semibold text-center">Tailwind Cheat Sheet</h4>
+  <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-1">Quick utility classes and layout patterns for rapid dev.</p>
+  <a href="TailwindCSS.pdf" class="block mt-3 text-center text-blue-500 hover:underline">View Notes</a>
+</article>
+
+</section>
+
+ <!-- JS Projects -->
+   <section id="projects">
+  <h2 class="text-3xl font-semibold border-b pb-2">🚀 Projects & Ideas</h2>
+  <div class="mt-6 grid md:grid-cols-2 gap-8">
+
+<!-- Premium Car Website -->
+<article class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition">
+  <div class="aspect-[16/9] overflow-hidden rounded-t-lg">
+    <img src="car.png" alt="Car Website" class="w-full h-full object-cover">
+  </div>
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold">🚗 Premium Car Website</h3>
+    <p class="mt-2 text-gray-600 dark:text-gray-400">
+      A luxurious landing page for a premium car brand. Featuring smooth scrolling, animated sections, and a sleek UI built using modern CSS and responsive design principles to showcase high-end vehicles.
+    </p>
+  </div>
+</article>
+
+
+<!-- Food Website -->
+<article class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition">
+  <div class="aspect-[16/9] overflow-hidden rounded-t-lg">
+    <img src="food.png" alt="Food Website" class="w-full h-full object-cover">
+  </div>
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold">🍔 Food Ordering Website</h3>
+    <p class="mt-2 text-gray-600 dark:text-gray-400">
+      A vibrant and user-friendly food website template. Designed with engaging visuals, this project focuses on layout balance, menu highlights, and responsive interactions for a smooth user journey.
+    </p>
+  </div>
+</article>
+
+   <!-- Netflix Clone -->
+<article class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition">
+  <div class="aspect-[16/9] overflow-hidden rounded-t-lg">
+    <img src="netflix.png" alt="Netflix Clone" class="w-full h-full object-cover">
+  </div>
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold">📺 Netflix UI Clone</h3>
+    <p class="mt-2 text-gray-600 dark:text-gray-400">
+      A visually accurate replica of Netflix's homepage, designed with responsive layout and content sliders. This project demonstrates strong skills in modern CSS, grid/flexbox layouts, and engaging front-end structure.
+    </p>
+  </div>
+</article>
+
+<!-- Myntra Clone -->
+<article class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition">
+  <div class="aspect-[16/9] overflow-hidden rounded-t-lg">
+    <img src="Myntra.png" alt="Myntra Clone" class="w-full h-full object-cover">
+  </div>
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold">🧥 Myntra Functional Clone</h3>
+    <p class="mt-2 text-gray-600 dark:text-gray-400">
+      A responsive clone of the popular Myntra e-commerce platform. Built using HTML, CSS, and JavaScript, it showcases product grids, filter UI, and a modern layout to simulate a real shopping experience.
+    </p>
+  </div>
+</article>
+
+
+
+<!-- Animated Login Page -->
+<article class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition">
+  <div class="aspect-[16/9] overflow-hidden rounded-t-lg">
+    <img src="lohinpage.png" alt="Animated Login Page" class="w-full h-full object-cover">
+  </div>
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold">🔐 Animated Login Page</h3>
+    <p class="mt-2 text-gray-600 dark:text-gray-400">
+      A modern and interactive login form designed with CSS animations and transitions. This project demonstrates responsive design and creative use of keyframes to deliver a professional user authentication interface.
+    </p>
+  </div>
+</article>
+
+<!-- Clock -->
+<article class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-xl transition">
+  <div class="aspect-[16/9] overflow-hidden rounded-t-lg">
+    <img src="clock.png" alt="Clock Project" class="w-full h-full object-cover">
+  </div>
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold">⏰ JavaScript Clock</h3>
+    <p class="mt-2 text-gray-600 dark:text-gray-400">
+      A functional digital clock created using HTML, CSS, and vanilla JavaScript. It features real-time updates, clean design, and serves as a foundational project to practice DOM manipulation and time formatting.
+    </p>
+  </div>
+</article>
+
+
+</section>
+
+<!--VS CODE SECTION-->
+<section id="vscode">
+  <h2 class="text-3xl font-semibold border-b pb-2">📌 VS Code Tips & Extensions</h2>
+  <div class="mt-6 grid md:grid-cols-2 gap-6">
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">🎨 Prettier</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">Prettier is an opinionated code formatter that enforces a consistent style by parsing your code and reprinting it. It removes all original styling and ensures uniform code layout across the entire team.</p>
+    </article>
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">🔍 GitLens</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">GitLens supercharges Git in VS Code. It helps you visualize code authorship via Git blame annotations, explore repository history, and understand who, why, and when a line of code was changed.</p>
+    </article>
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">⚡ Live Server</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">Launch a local development server with live reload for static and dynamic pages. Ideal for frontend developers to preview HTML/CSS/JS changes in real-time.</p>
+    </article>
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">🤖 Tabnine</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">Tabnine uses machine learning to autocomplete code as you type. It supports multiple languages and frameworks, helping you write code faster with fewer errors.</p>
+    </article>
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">🧹 ESLint</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">ESLint statically analyzes your code to quickly find problems and enforces coding style rules. It's a must-have for JavaScript and TypeScript projects to maintain clean code.</p>
+    </article>
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">📡 REST Client</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">REST Client allows you to send HTTP requests and view responses directly inside VS Code. No need to switch to Postman or another API tool — great for backend or API developers.</p>
+    </article>
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">📁 Path Intellisense</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">This extension autocompletes filenames and paths in your import statements, saving you time and preventing errors in file navigation or linking resources.</p>
+    </article>
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">🟩 Bracket Pair Colorizer 2</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">It highlights matching brackets with different colors, making it easier to spot bugs and understand nested code blocks — especially in JavaScript, Python, or C-like languages.</p>
+    </article>
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">📸 CodeSnap</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">Take beautiful screenshots of your code directly from VS Code. It’s perfect for sharing on social media, documentation, or tech blogs.</p>
+    </article>
+
+    <article class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold">🧠 IntelliCode</h3>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">Microsoft IntelliCode provides AI-assisted code suggestions based on best practices learned from thousands of open-source repositories. Improves speed and accuracy while coding.</p>
+    </article>
+
+  </div>
+</section>
+
+
+   
+
+
+
+   
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-8 text-center text-gray-600 dark:text-gray-400">
+    © 2025 Sahil Rajput · Built with ♥ using Tailwind CSS & JavaScript
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+  // Theme toggle
+  const html = document.documentElement;
+  const themeBtn = document.getElementById('themeToggle');
+  themeBtn.addEventListener('click', () => {
+    html.classList.toggle('dark');
+    localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+  });
+  if (localStorage.theme === 'dark') html.classList.add('dark');
+
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('menu');
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+<script>
+  const tabBtns = document.querySelectorAll(".tab-btn");
+  const cards = document.querySelectorAll(".note-card");
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const tab = btn.getAttribute("data-tab");
+
+      // update active tab styles
+      tabBtns.forEach(b => {
+        b.classList.remove("text-blue-500", "border-blue-500");
+        b.classList.add("text-gray-600", "dark:text-gray-400");
+      });
+      btn.classList.add("text-blue-500", "border-blue-500");
+
+      // show/hide cards based on tab
+      cards.forEach(card => {
+        if (tab === "all") {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.toggle("hidden", !card.classList.contains(tab));
+        }
+      });
+    });
+  });
+
+  // search filter (applies to visible cards only)
+  document.getElementById("noteSearch").addEventListener("input", function () {
+    const query = this.value.toLowerCase();
+    cards.forEach(card => {
+      const title = card.querySelector("h4").textContent.toLowerCase();
+      card.classList.toggle("hidden", !title.includes(query));
+    });
+  });
+</script>
+
+</body>
+</html>

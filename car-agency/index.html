@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxAuto | Premium Car Dealership</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-black': '#121212',
+                        'secondary-black': '#1a1a1a',
+                        'accent-gold': '#c8a97e',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Essential styles only */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Basic fade animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        /* Optimized scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--primary-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-gold);
+            border-radius: 4px;
+        }
+
+        /* Focus styles */
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+    </style>
+</head>
+<body class="bg-primary-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-secondary-black/90 backdrop-blur-sm z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Classic Logo -->
+            <a href="#" class="group">
+                <div class="flex items-center">
+                    <h1 class="text-3xl font-serif">
+                        <span class="text-accent-gold font-medium tracking-wider">MONARCH</span>
+                        <span class="mx-3 text-accent-gold text-2xl">×</span>
+                        <span class="text-white font-light tracking-widest">MOTORS</span>
+                    </h1>
+                </div>
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-accent-gold transition-colors">Home</a></li>
+                <li><a href="#brands" class="hover:text-accent-gold transition-colors">Brands</a></li>
+                <li><a href="#inventory" class="hover:text-accent-gold transition-colors">Inventory</a></li>
+                <li><a href="#about" class="hover:text-accent-gold transition-colors">About</a></li>
+                <li><a href="#contact" class="hover:text-accent-gold transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="h-screen relative overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a')] bg-cover bg-center">
+                <div class="absolute inset-0 bg-black/75"></div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative h-full flex items-center justify-center text-center px-4">
+            <div>
+                <!-- Welcome Text -->
+                <span class="text-accent-gold text-xl block mb-8 font-serif tracking-[0.2em]">DISCOVER EXCELLENCE</span>
+                
+                <!-- Main Logo -->
+                <div class="mb-12">
+                    <h1 class="text-7xl md:text-9xl font-serif mb-6">
+                        <span class="text-accent-gold">IMPERIAL</span>
+                    </h1>
+                    <div class="flex items-center justify-center gap-8 mb-6">
+                        <div class="w-16 h-[1px] bg-accent-gold"></div>
+                        <span class="text-white text-2xl font-light">EST. 2024</span>
+                        <div class="w-16 h-[1px] bg-accent-gold"></div>
+                    </div>
+                    <span class="text-4xl md:text-5xl text-white font-light tracking-[0.3em]">MOTORCARS</span>
+                </div>
+
+                <!-- Tagline -->
+                <p class="text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
+                    Curating the finest collection of luxury automobiles for the most discerning enthusiasts.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <a href="#inventory" class="bg-accent-gold text-primary-black px-12 py-4 text-lg font-medium tracking-wider hover:bg-accent-gold/90 transition-colors">
+                        VIEW COLLECTION
+                    </a>
+                    <a href="#contact" class="border border-accent-gold text-accent-gold px-12 py-4 text-lg font-medium tracking-wider hover:bg-accent-gold hover:text-primary-black transition-colors">
+                        CONTACT US
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Cars Section -->
+    <section id="inventory" class="bg-secondary-black py-20 px-6 relative">
+        <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-primary-black to-transparent"></div>
+        <div class="max-w-7xl mx-auto relative">
+            <div class="flex justify-between items-center mb-16">
+                <div>
+                    <span class="text-accent-gold text-sm tracking-widest block mb-2">OUR COLLECTION</span>
+                    <h2 class="text-4xl md:text-5xl font-bold">Featured Vehicles</h2>
+                </div>
+                <div class="space-x-4">
+                    <button class="group px-6 py-2 border border-accent-gold text-accent-gold rounded-full hover:bg-accent-gold hover:text-primary-black transition-all duration-300">
+                        <i class="fas fa-filter mr-2"></i>Filter
+                    </button>
+                    <button class="group px-6 py-2 border border-accent-gold text-accent-gold rounded-full hover:bg-accent-gold hover:text-primary-black transition-all duration-300">
+                        <i class="fas fa-sort mr-2"></i>Sort
+                    </button>
+                </div>
+            </div>
+
+            <!-- Update car cards with hover effects -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-primary-black rounded-xl overflow-hidden group hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent-gold/10 transition-all duration-500 neon-border">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1617654112368-307921291f42" 
+                             alt="Luxury Car" 
+                             class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-accent-gold text-primary-black px-4 py-1 rounded-full text-sm font-bold">
+                            New Arrival
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mercedes-Benz S-Class</h3>
+                        <div class="flex justify-between text-sm text-gray-400 mb-4">
+                            <span>2023</span>
+                            <span>0 miles</span>
+                            <span>Automatic</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-accent-gold text-2xl font-bold">$110,000</p>
+                            <button class="bg-accent-gold text-primary-black px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-colors">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Car Cards -->
+                <div class="bg-primary-black rounded-xl overflow-hidden group hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent-gold/10 transition-all duration-500 neon-border">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a" 
+                             alt="Sports Car" 
+                             class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Porsche 911 GT3</h3>
+                        <div class="flex justify-between text-sm text-gray-400 mb-4">
+                            <span>2023</span>
+                            <span>1,200 miles</span>
+                            <span>Manual</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-accent-gold text-2xl font-bold">$168,000</p>
+                            <button class="bg-accent-gold text-primary-black px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-colors">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-primary-black rounded-xl overflow-hidden group hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent-gold/10 transition-all duration-500 neon-border">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1612825173281-9a193378527e" 
+                             alt="SUV" 
+                             class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white px-4 py-1 rounded-full text-sm font-bold">
+                            Hot Deal
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Range Rover Sport</h3>
+                        <div class="flex justify-between text-sm text-gray-400 mb-4">
+                            <span>2023</span>
+                            <span>500 miles</span>
+                            <span>Automatic</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-accent-gold text-2xl font-bold">$95,000</p>
+                            <button class="bg-accent-gold text-primary-black px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition-colors">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Brands Section -->
+    <section id="brands" class="py-20 px-6 bg-primary-black relative">
+        <div class="absolute inset-0 bg-[url('https://subtle-patterns.com/patterns/dark_geometric.png')] opacity-5"></div>
+        <div class="max-w-7xl mx-auto text-center relative">
+            <span class="text-accent-gold text-sm tracking-widest block mb-2">LUXURY BRANDS</span>
+            <h2 class="text-4xl font-bold mb-16">Premium Manufacturers</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <!-- Mercedes-Benz -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-28 h-28 rounded-full bg-secondary-black flex items-center justify-center mb-4 
+                                group-hover:bg-accent-gold/10 transition-all duration-300 
+                                shadow-lg shadow-black/50 group-hover:shadow-accent-gold/20 neon-border glow">
+                        <i class="fas fa-star text-6xl text-accent-gold group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <span class="text-lg group-hover:text-accent-gold transition-colors">Mercedes-Benz</span>
+                </div>
+                
+                <!-- BMW -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-28 h-28 rounded-full bg-secondary-black flex items-center justify-center mb-4 
+                                group-hover:bg-accent-gold/10 transition-all duration-300 
+                                shadow-lg shadow-black/50 group-hover:shadow-accent-gold/20 neon-border glow">
+                        <svg class="w-16 h-16 text-accent-gold" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm0-2V4a6 6 0 010 12zM4 12h16a8 8 0 00-16 0z"/>
+                        </svg>
+                    </div>
+                    <span class="text-lg group-hover:text-accent-gold transition-colors">BMW</span>
+                </div>
+                
+                <!-- Porsche -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-28 h-28 rounded-full bg-secondary-black flex items-center justify-center mb-4 
+                                group-hover:bg-accent-gold/10 transition-all duration-300 
+                                shadow-lg shadow-black/50 group-hover:shadow-accent-gold/20 neon-border glow">
+                        <i class="fas fa-shield-alt text-6xl text-accent-gold group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <span class="text-lg group-hover:text-accent-gold transition-colors">Porsche</span>
+                </div>
+                
+                <!-- Audi -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-28 h-28 rounded-full bg-secondary-black flex items-center justify-center mb-4 
+                                group-hover:bg-accent-gold/10 transition-all duration-300 
+                                shadow-lg shadow-black/50 group-hover:shadow-accent-gold/20 neon-border glow">
+                        <svg class="w-16 h-16 text-accent-gold" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-12c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
+                        </svg>
+                    </div>
+                    <span class="text-lg group-hover:text-accent-gold transition-colors">Audi</span>
+                </div>
+
+                <!-- Additional Luxury Brands -->
+                <div class="flex flex-col items-center group">
+                    <div class="w-28 h-28 rounded-full bg-secondary-black flex items-center justify-center mb-4 
+                                group-hover:bg-accent-gold/10 transition-all duration-300 
+                                shadow-lg shadow-black/50 group-hover:shadow-accent-gold/20 neon-border glow">
+                        <i class="fas fa-crown text-6xl text-accent-gold group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <span class="text-lg group-hover:text-accent-gold transition-colors">Rolls-Royce</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="w-28 h-28 rounded-full bg-secondary-black flex items-center justify-center mb-4 
+                                group-hover:bg-accent-gold/10 transition-all duration-300 
+                                shadow-lg shadow-black/50 group-hover:shadow-accent-gold/20 neon-border glow">
+                        <i class="fas fa-bolt text-6xl text-accent-gold group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <span class="text-lg group-hover:text-accent-gold transition-colors">Lamborghini</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="w-28 h-28 rounded-full bg-secondary-black flex items-center justify-center mb-4 
+                                group-hover:bg-accent-gold/10 transition-all duration-300 
+                                shadow-lg shadow-black/50 group-hover:shadow-accent-gold/20 neon-border glow">
+                        <i class="fas fa-horse text-6xl text-accent-gold group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <span class="text-lg group-hover:text-accent-gold transition-colors">Ferrari</span>
+                </div>
+
+                <div class="flex flex-col items-center group">
+                    <div class="w-28 h-28 rounded-full bg-secondary-black flex items-center justify-center mb-4 
+                                group-hover:bg-accent-gold/10 transition-all duration-300 
+                                shadow-lg shadow-black/50 group-hover:shadow-accent-gold/20 neon-border glow">
+                        <i class="fas fa-car-side text-6xl text-accent-gold group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <span class="text-lg group-hover:text-accent-gold transition-colors">Bentley</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 px-6 bg-primary-black relative">
+        <div class="absolute inset-0 bg-[url('https://subtle-patterns.com/patterns/dark_geometric.png')] opacity-5"></div>
+        <div class="max-w-7xl mx-auto relative">
+            <span class="text-accent-gold text-sm tracking-widest block text-center mb-2">TESTIMONIALS</span>
+            <h2 class="text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-secondary-black p-8 rounded-xl hover:shadow-xl hover:shadow-accent-gold/10 transition-all duration-300
+                            hover:-translate-y-2 relative">
+                    <div class="absolute -top-4 -right-4 text-6xl text-accent-gold opacity-20">"</div>
+                    <div class="text-accent-gold text-2xl mb-4">★★★★★</div>
+                    <p class="text-gray-300 mb-6">"Exceptional service and an amazing selection of luxury vehicles. The team made my car buying experience truly memorable."</p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/60?img=1" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">James Wilson</h4>
+                            <p class="text-sm text-gray-400">Mercedes-Benz Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-secondary-black p-8 rounded-xl hover:shadow-xl hover:shadow-accent-gold/10 transition-all duration-300
+                            hover:-translate-y-2 relative">
+                    <div class="absolute -top-4 -right-4 text-6xl text-accent-gold opacity-20">"</div>
+                    <div class="text-accent-gold text-2xl mb-4">★★★★★</div>
+                    <p class="text-gray-300 mb-6">"The attention to detail and professionalism at LuxAuto is unmatched. I couldn't be happier with my new Porsche."</p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/60?img=2" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Thompson</h4>
+                            <p class="text-sm text-gray-400">Porsche Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary-black p-8 rounded-xl hover:shadow-xl hover:shadow-accent-gold/10 transition-all duration-300
+                            hover:-translate-y-2 relative">
+                    <div class="absolute -top-4 -right-4 text-6xl text-accent-gold opacity-20">"</div>
+                    <div class="text-accent-gold text-2xl mb-4">★★★★★</div>
+                    <p class="text-gray-300 mb-6">"From start to finish, the buying process was smooth and transparent. I highly recommend LuxAuto to anyone."</p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/60?img=3" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-sm text-gray-400">BMW Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-secondary-black relative">
+        <div class="absolute inset-0 bg-[url('https://subtle-patterns.com/patterns/dark_geometric.png')] opacity-5"></div>
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+                    <p class="text-gray-300 mb-8">Experience luxury automotive excellence. Contact us to schedule a viewing or discuss your requirements.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent-gold w-8"></i>
+                            <span>123 Luxury Lane, Beverly Hills, CA 90210</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-accent-gold w-8"></i>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-accent-gold w-8"></i>
+                            <span>info@luxauto.com</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Name" class="bg-primary-black p-3 rounded-lg">
+                        <input type="email" placeholder="Email" class="bg-primary-black p-3 rounded-lg">
+                    </div>
+                    <input type="text" placeholder="Subject" class="w-full bg-primary-black p-3 rounded-lg">
+                    <textarea placeholder="Message" rows="4" class="w-full bg-primary-black p-3 rounded-lg"></textarea>
+                    <button class="bg-accent-gold text-primary-black px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all duration-300 shine neon-border">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-black pt-12 pb-6 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-accent-gold italic mb-4">LuxAuto</h3>
+                    <p class="text-gray-400">Your premier destination for luxury and exotic vehicles.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#inventory" class="hover:text-accent-gold">Inventory</a></li>
+                        <li><a href="#about" class="hover:text-accent-gold">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-accent-gold">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Car Sales</li>
+                        <li>Vehicle Maintenance</li>
+                        <li>Custom Orders</li>
+                        <li>Financing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent-gold transition-colors">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-accent-gold transition-colors">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-accent-gold transition-colors">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-accent-gold transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 LuxAuto. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

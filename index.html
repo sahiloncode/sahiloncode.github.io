@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>codewithsahil</title>
+	<script src="https://cdn.tailwindcss.com">
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js">
+	</script>
+	<script>
+		// Tailwind dark mode config
+    tailwind.config = {
+      darkMode: 'class',
+    };
+	</script>
+	<style>
+		.toggle-switch {
+			transition: transform 0.3s ease;
+		}
+	</style>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+
+	<!-- Navbar -->
+	<nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+		<div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+			<a href="#" class="flex items-center space-x-3">
+				<!-- Crisp SVG Code Bracket Icon -->
+				<svg class="h-8 w-8 text-blue-600 dark:text-pink-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+				 stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M8 9L4 12l4 3M16 9l4 3-4 3" />
+				</svg>
+				<!-- Brand Text -->
+				<span class="self-center text-2xl font-bold text-gray-900 dark:text-white">
+        <span class="text-blue-600 dark:text-blue-400">CODE</span><span class="text-pink-400 dark:text-pink-300">WITH</span>SAHIL
+      </span>
+    </a>
+         <!-- Mobile Toggle -->
+    <button data-collapse-toggle="navbar-solid-bg" type="button"
+      class="inline-flex items-center p-2 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600"
+      aria-controls="navbar-solid-bg" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" fill="none" viewBox="0 0 17 14" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+    
+           <!-- Navigation Links -->
+    <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+      <ul class="flex flex-col mt-4 font-medium rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:bg-transparent dark:bg-gray-800">
+        <li><a href="#home" class="block py-2 px-3 text-blue-600 md:p-0 dark:text-blue-400" aria-current="page">Home</a></li>
+        <li><a href="BLOG/" class="block py-2 px-3 text-gray-900 hover:text-blue-600 md:p-0 dark:text-white dark:hover:text-blue-400">Blog</a></li>
+        <li><a href="Portfolio/" class="block py-2 px-3 text-gray-900 hover:text-blue-600 md:p-0 dark:text-white dark:hover:text-blue-400">Portfolio</a></li>
+        <li><a href="Portfolio/" class="block py-2 px-3 text-gray-900 hover:text-blue-600 md:p-0 dark:text-white dark:hover:text-blue-400">Contact</a></li>
+  <!-- Add inside your navbar -->
+<div class="relative">
+  <label class="inline-flex items-center cursor-pointer">
+    <input type="checkbox" id="theme-switch" class="sr-only peer">
+    <div class="w-12 h-6 bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 peer-checked:from-gray-800 peer-checked:to-black rounded-full peer peer-checked:after:translate-x-6 after:content-['🌞'] peer-checked:after:content-['🌙'] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:flex after:items-center after:justify-center after:text-xs after:transition-all">
+    </div>
+  </label>
+</div>
+      </ul>
+      
+    </div>
+  </div>
+</nav
+<!-- Left Card: Introduction with Dark Theme Support -->
+<section class="text-gray-600 dark:text-gray-300 body-font bg-white dark:bg-gray-950 w-full">
+  <div class="w-full flex px-5 py-24 md:flex-row flex-col items-center">
+    <!-- Content Section -->
+    <div class="lg:flex-grow w-full flex flex-col items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900 dark:text-white">
+        Hi, I'm Sahil Rajput 👨‍💻
+      <p class="text-xl md:text-2xl font-semibold mb-4 text-gray-800 dark:text-white drop-shadow-sm">
+  Frontend Developer • UI Designer • Web Enthusiast
+</p>
+
+      </h1>
+      <p class="mb-6 leading-relaxed text-lg text-gray-700 dark:text-gray-400 max-w-2xl">
+        I love crafting beautiful and responsive web interfaces with clean code and smooth user experience.
+        My toolbox includes modern frontend technologies that help bring ideas to life in the browser.
+      </p>
+
+      <!-- Tech Stack Section -->
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">💻 Languages & Tools I Use:</h2>
+        <div class="flex flex-wrap justify-center gap-6 py-4 text-5xl" data-aos="fade-up">
+      <i class="devicon-html5-plain colored" title="HTML5"></i>
+      <i class="devicon-css3-plain colored" title="CSS3"></i>
+      <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+      <i class="devicon-tailwindcss-plain colored" title="Tailwind CSS"></i>
+      <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+      <i class="devicon-react-original colored" title="React"></i>
+      <i class="devicon-git-plain colored" title="Git"></i>
+      <i class="devicon-github-original colored dark:text-white" title="GitHub"></i>
+      <i class="devicon-vscode-plain colored" title="VS Code"></i>
+      <i class="devicon-firebase-plain colored" title="Firebase"></i>
+      <i class="devicon-figma-plain colored" title="Figma"></i>
+      <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+      <i class="devicon-npm-original-wordmark colored" title="npm"></i>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- Centered Projects Heading with Icon -->
+<div class="text-center my-12">
+  <!-- Icon -->
+  <div class="flex justify-center items-center mb-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132a1 1 0 00-1.555.832v4.264a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  </div>
+
+  <!-- Heading -->
+<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Projects</h2>
+
+
+
+  <!-- Description -->
+  <p class="mt-2 text-lg text-gray-400 max-w-xl mx-auto">
+    Explore my featured frontend development projects showcasing responsive design, UI creativity, and clean code.
+  </p>
+</div>
+
+  </div>
+        <!-- Projects Grid -->
+  <div class="w-full px-4 pb-16">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Project Card -->
+      <div class="bg-gray-900 p-4 rounded-lg shadow-md">
+        <div class="aspect-w-16 aspect-h-10 rounded-lg overflow-hidden">
+          <img src="lohinpage.png" alt="Animated Login Page" class="object-cover w-full h-full">
+          
+        </div>
+        <h2 class="text-xl font-medium text-white mt-5">Animated Login Page</h2>
+        <p class="text-base text-gray-300 mt-2">Smooth and modern login screen using only HTML & CSS, perfect for authentication UI.</p>
+        <a href="https://codewithsahil.wuaze.com/Animated-Login-Page/" target="_blank"
+   class="inline-flex items-center mt-4 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition">
+   <!-- Same SVG as above -->
+   Visit Project
+</a>
+
+      </div>
+            <!-- Project Card -->
+      <div class="bg-gray-900 p-4 rounded-lg shadow-md">
+        <div class="aspect-w-16 aspect-h-10 rounded-lg overflow-hidden">
+          <img src="car.png" alt="Premium Car Website" class="object-cover w-full h-full">
+        </div>
+        <h2 class="text-xl font-medium text-white mt-5">Premium Car Website</h2>
+        <p class="text-base text-gray-300 mt-2">High-quality static website for showcasing car models and features.</p>
+           <a href="https://codewithsahil.wuaze.com/car-agency/" target="_blank"
+   class="inline-flex items-center mt-4 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition">
+   <!-- Same SVG as above -->
+   Visit Project
+</a>
+      </div>
+          <!-- Project Card -->
+      <div class="bg-gray-900 p-4 rounded-lg shadow-md">
+        <div class="aspect-w-16 aspect-h-10 rounded-lg overflow-hidden">
+          <img src="food.png" alt="Food Website" class="object-cover w-full h-full">
+        </div>
+        <h2 class="text-xl font-medium text-white mt-5">Food Delivery Website</h2>
+        <p class="text-base text-gray-300 mt-2">Responsive site with beautiful layout for food items, offers, and contact info.</p>
+           <a href="https://codewithsahil.wuaze.com/Food-Website/" target="_blank"
+   class="inline-flex items-center mt-4 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition">
+   <!-- Same SVG as above -->
+   Visit Project
+</a>
+      </div>
+           <!-- Project Card -->
+      <div class="bg-gray-900 p-4 rounded-lg shadow-md">
+        <div class="aspect-w-16 aspect-h-10 rounded-lg overflow-hidden">
+          <img src="netflix.png" alt="Netflix Clone" class="object-cover w-full h-full">
+        </div>
+        <h2 class="text-xl font-medium text-white mt-5">Netflix Clone</h2>
+        <p class="text-base text-gray-300 mt-2">Homepage clone of Netflix using HTML & CSS, fully responsive and sleek.</p>
+           <a href="https://codewithsahil.wuaze.com/Netflix-Clone/" target="_blank"
+   class="inline-flex items-center mt-4 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition">
+   <!-- Same SVG as above -->
+   Visit Project
+</a>
+      </div>
+      
+          <!-- Project Card -->
+      <div class="bg-gray-900 p-4 rounded-lg shadow-md">
+        <div class="aspect-w-16 aspect-h-10 rounded-lg overflow-hidden">
+          <img src="Myntra.png" alt="Myntra Clone" class="object-cover w-full h-full">
+        </div>
+        <h2 class="text-xl font-medium text-white mt-5">Myntra Clone</h2>
+        <p class="text-base text-gray-300 mt-2">Replica of Myntra homepage with functional design and responsive layout.</p>
+           <a href="https://codewithsahil.wuaze.com/Myntra-Functional-Clone/" target="_blank"
+   class="inline-flex items-center mt-4 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition">
+   <!-- Same SVG as above -->
+   Visit Project
+</a>
+      </div>
+      
+          <!-- Project Card -->
+      <div class="bg-gray-900 p-4 rounded-lg shadow-md">
+        <div class="aspect-w-16 aspect-h-10 rounded-lg overflow-hidden">
+          <img src="clock.png" alt="Dual Theme Clock" class="object-cover w-full h-full">
+        </div>
+        <h2 class="text-xl font-medium text-white mt-5">Dual Theme Clock</h2>
+        <p class="text-base text-gray-300 mt-2">Light/Dark mode digital clock created with HTML, CSS, and JavaScript.</p>
+           <a href="https://codewithsahil.wuaze.com/Dual-Theme-Clock/" target="_blank"
+   class="inline-flex items-center mt-4 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition">
+   <!-- Same SVG as above -->
+   Visit Project
+</a>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+<!-- CONNECT SECTION -->
+<section class="text-gray-800 dark:text-gray-100 body-font bg-gray-100 dark:bg-gray-900 w-full">
+  <div class="w-full px-5 py-24 flex flex-col items-center text-center">
+    <div class="max-w-4xl">
+      <h1 class="title-font sm:text-4xl text-3xl mb-6 font-bold">
+        Let’s Connect & Build the Future Together 🚀
+      </h1>
+      <p class="leading-relaxed text-lg text-gray-700 dark:text-gray-300">
+        I’m always excited to collaborate on creative web projects, solve real-world problems with code, or simply share knowledge with fellow developers and innovators. If you’ve got an idea, a challenge, or just want to talk tech—I’m all ears. Let’s make something amazing.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section class="text-gray-800 dark:text-gray-100 body-font bg-white dark:bg-gray-800">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-16">
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white tracking-wide uppercase">🚀 Meet the Developer</h1>
+      <p class="lg:w-2/3 mx-auto text-base leading-relaxed text-gray-600 dark:text-gray-400 mt-4">
+        Crafting clean, efficient, and user-friendly interfaces with precision and purpose.
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <div class="p-6 w-full md:w-1/2 lg:w-1/3 bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+        <div class="text-center space-y-4">
+
+          <!-- Icon -->
+          <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-purple-600 dark:text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L4 12l5.75-5M14.25 7l5.75 5-5.75 5" />
+            </svg>
+          </div>
+
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Sahil Kumar (Sahil Rajput)</h2>
+          <p class="text-sm text-gray-500 dark:text-gray-400">🎯 Frontend Developer | UI Architect</p>
+
+          <p class="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+            I am a dedicated frontend developer based in Ambala, Haryana. With a strong foundation in HTML, CSS, Tailwind, and JavaScript, I transform creative concepts into functional and responsive user interfaces that perform seamlessly across devices.
+          </p>
+
+          <div class="flex flex-col gap-2 text-left text-gray-700 dark:text-gray-300 mt-6">
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-purple-500 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1 0h.01M12 18h.01M21 12A9 9 0 103 12a9 9 0 0018 0z" />
+              </svg>
+              Passionate about clean UI and code quality
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-purple-500 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6 2a9 9 0 11-6.219-8.562" />
+              </svg>
+              Committed to continuous learning and innovation
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-purple-500 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Focused on building real-world projects with impact
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <span class="inline-block w-12 h-1 bg-purple-600 dark:bg-yellow-400 rounded-full"></span>
+          </div>
+          <p class="text-xs text-gray-400 dark:text-gray-500 mt-4 italic">“Build with purpose. Refine with passion.”</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDICATORS (unchanged) -->
+<div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+  <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+  <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+  <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+  <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+  <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+</div>
+
+  <section class="text-gray-800 dark:text-gray-100 body-font bg-blue-100 dark:bg-black">
+  <div class="container px-5 py-24 mx-auto text-center">
+    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto bg-white dark:bg-gray-900 p-10 rounded-lg shadow-md">
+      <!-- Quote Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+           class="inline-block w-12 h-12 text-purple-500 dark:text-purple-400 mb-6"
+           viewBox="0 0 24 24">
+        <path d="M7.17 6.25A7.03 7.03 0 0 0 3 13.75V21h6v-7H6.03a5.5 5.5 0 0 1 4.03-5.25L9.5 6.25H7.17ZM17.17 6.25A7.03 7.03 0 0 0 13 13.75V21h6v-7h-2.97a5.5 5.5 0 0 1 4.03-5.25L19.5 6.25h-2.33Z" />
+      </svg>
+
+      <!-- Inspirational Quote -->
+      <p class="leading-relaxed text-xl italic text-gray-700 dark:text-gray-300">
+        “Success is not final, failure is not fatal: <br class="hidden md:block" />
+        It is the courage to continue that counts.” 🌟💪
+      </p>
+
+      <!-- Divider -->
+      <span class="inline-block h-1 w-20 rounded bg-purple-500 dark:bg-purple-400 mt-8 mb-6"></span>
+
+      <!-- Quote Author -->
+      <h2 class="text-gray-900 dark:text-white font-semibold tracking-wide text-md">
+        Winston Churchill
+      </h2>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">
+        🇬🇧 Former Prime Minister of the United Kingdom
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER with Solid Background (No Gradient) -->
+<footer class="bg-gray-950 dark:bg-black text-gray-300 text-sm">
+  <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- About -->
+    <div>
+      <h3 class="text-white font-semibold text-base mb-2">Sahil Rajput</h3>
+      <p class="text-gray-400 leading-relaxed">
+        Frontend Developer passionate about creating fast, responsive websites using HTML, CSS, Tailwind, and JavaScript. Based in Ambala, India.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-white font-semibold text-base mb-2">Quick Links</h3>
+      <ul class="space-y-1">
+        <li><a href="Portfolio/" class="hover:text-purple-400 transition">Projects</a></li>
+        <li><a href="Portfolio/" class="hover:text-purple-400 transition">About Me</a></li>
+        <li><a href="Portfolio/" class="hover:text-purple-400 transition">Contact</a></li>
+        <li><a href="mailto:sahilrajput4763@gmail.com" class="hover:text-purple-400 transition">Email Me</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-white font-semibold text-base mb-2">Contact Info</h3>
+      <ul class="space-y-1 text-gray-400">
+        <li>📍 Ambala, Haryana</li>
+        <li>📞 +91 81686-56857</li>
+        <li>📧 <a href="mailto:sahilrajput4763@gmail.com" class="hover:text-purple-400 transition">sahilrajput4763@gmail.com</a></li>
+        <li>🔗 <a href="https://github.com/SahilRajput47" target="_blank" class="hover:text-purple-400 transition">GitHub Profile</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="bg-gray-900 dark:bg-gray-800 py-4 mt-4">
+    <p class="text-center text-gray-500 text-xs">© 2025 Sahil Rajput. Crafted with ❤️ using HTML, Tailwind CSS & JavaScript.</p>
+  </div>
+</footer>
+
+
+<script>
+  const switchInput = document.getElementById('theme-switch');
+
+  // Load previous theme
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark');
+    switchInput.checked = true;
+  }
+
+  switchInput.addEventListener('change', function () {
+    if (this.checked) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+</script>
+
+</body>
+</html>
