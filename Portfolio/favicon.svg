@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 100 100">
-  <rect x="10" y="10" width="80" height="80" rx="18" fill="#0d0d0d" stroke="#38bdf8" stroke-width="3"/>
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="38" font-family="Fira Code, monospace" fill="#38bdf8">
-    &gt;_
-  </text>
-</svg>
